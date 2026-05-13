@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hemolife - Doe Sangue, Doe Vida</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff; /* Tirei o cinza */
+        }
+
+        /* HEADER VERMELHO */
+        header {
+            background: #e30613;
+            padding: 15px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 26px;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            font-size: 1.05rem;
+        }
+
+        nav a:hover {
+            color: #ffd700; /* Dourado para destaque */
+        }
+
+        /* Hero */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                        url('https://i.ibb.co/Tqb0JKsS/565f3a1e-e180-480c-8fc4-da5761211f96.jpg') center/cover;
+            height: 480px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 3.8rem;
+            text-transform: uppercase;
+        }
+
+        .hero .subtitle {
+            font-size: 2.6rem;
+            margin: 10px 0 20px;
+        }
+
+        /* Conteúdo */
+        .info {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 35px;
+            background: #e30613;
+            color: white;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .cta {
+            text-align: center;
+            padding: 50px 20px;
+            background: #fff;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #e30613;
+            color: white;
+            padding: 16px 45px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            border-radius: 50px;
+            text-decoration: none;
+            margin-top: 15px;
+        }
+
+        .btn:hover {
+            background: #c0040f;
+            transform: scale(1.05);
+        }
+
+        footer {
+            background: #222;
+            color: #ddd;
+            text-align: center;
+            padding: 25px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER VERMELHO -->
+    <header>
+        <div class="nav">
+            <a href="#" class="logo">
+                ❤️ O+ LIFE
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#doacao">Doação</a></li>
+                    <li><a href="#localizacao">Localização</a></li>
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div>
+            <h1>DOE SANGUE</h1>
+            <p class="subtitle">DOE VIDA</p>
+        </div>
+    </section>
+
+    <!-- INFORMAÇÃO -->
+    <div class="info">
+        <p style="font-size: 1.2rem;">
+            Cada bairro possui um ponto de encontro com a vida. Visite o posto de saúde da sua região, 
+            informe-se sobre o cronograma de doações e transforme a sua localidade em um exemplo de amor ao próximo.
+        </p>
+    </div>
+
+    <!-- BOTÃO CTA -->
+    <div class="cta">
+        <h2 style="font-size: 2rem; margin-bottom: 20px;">Torne-se um doador!</h2>
+        <a href="#doacao" class="btn">CLIQUE AQUI</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Hemolife - Todos os direitos reservados</p>
+    </footer>
+
+</body>
+</html>
+
