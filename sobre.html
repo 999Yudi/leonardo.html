@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hemolife - Doe Sangue, Doe Vida</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f8f8;
+        }
+        header {
+            background: #e30613;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .nav {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        .logo {
+            font-size: 26px;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                        url('https://i.ibb.co/Tqb0JKsS/565f3a1e-e180-480c-8fc4-da5761211f96.jpg') center/cover;
+            height: 450px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+        .hero h1 {
+            font-size: 3.5rem;
+            text-transform: uppercase;
+        }
+        .hero .subtitle {
+            font-size: 2.3rem;
+        }
+
+        .card-red {
+            background: #e30613;
+            color: white;
+            padding: 40px 20px;
+            margin: 40px auto;
+            max-width: 1000px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .card-red h2 {
+            font-size: 2.3rem;
+            margin-bottom: 20px;
+        }
+
+        .depoimentos {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+        .depoimentos h2 {
+            text-align: center;
+            color: #e30613;
+            margin-bottom: 30px;
+        }
+        .depo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .depo-card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            border-top: 5px solid #e30613;
+        }
+
+        .cta {
+            text-align: center;
+            padding: 60px 20px;
+            background: white;
+        }
+        .btn {
+            background: #e30613;
+            color: white;
+            padding: 15px 40px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            border-radius: 50px;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .btn:hover {
+            background: #c0040f;
+        }
+
+        footer {
+            background: #222;
+            color: #ddd;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.6rem; }
+            .hero .subtitle { font-size: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="nav">
+            <a href="#" class="logo">O+ LIFE</a>
+            <nav>
+                <ul>
+                    <li><a href="#doacao">Doação</a></li>
+                    <li><a href="#localizacao">Localização</a></li>
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div>
+            <h1>DOE SANGUE</h1>
+            <p class="subtitle">DOE VIDA</p>
+        </div>
+    </section>
+
+    <!-- SOBRE NÓS -->
+    <div id="sobre" class="card-red">
+        <h2>Sobre Nós</h2>
+        <p style="font-size: 1.2rem; max-width: 800px; margin: 0 auto;">
+            A Hemolife conecta doadores a quem precisa de sangue. 
+            Facilitamos o agendamento, tornamos a doação mais simples e ajudamos a salvar vidas em Curitiba e região.
+        </p>
+    </div>
+
+    <!-- DEPOIMENTOS -->
+    <div class="depoimentos">
+        <h2>O que nossos doadores dizem</h2>
+        <div class="depo-grid">
+            <div class="depo-card">
+                <p>"Plataforma muito fácil de usar. Doar agora é simples e rápido!"</p>
+                <strong>— Ana Clara, Curitiba</strong>
+            </div>
+            <div class="depo-card">
+                <p>"Já doei 3 vezes graças aos lembretes. Recomendo!"</p>
+                <strong>— João Victor, São José dos Pinhais</strong>
+            </div>
+            <div class="depo-card">
+                <p>"Consegui ajudar o hospital onde minha mãe estava. Muito gratificante."</p>
+                <strong>— Maria Luíza, Curitiba</strong>
+            </div>
+        </div>
+    </div>
+
+    <!-- PROPOSTA -->
+    <div class="card-red">
+        <h2>Nossa Proposta</h2>
+        <p style="font-size: 1.2rem; max-width: 800px; margin: 0 auto;">
+            Conectar doadores a hemocentros em tempo real, facilitar agendamentos e 
+            aumentar o estoque de sangue na nossa região através de tecnologia simples e eficiente.
+        </p>
+    </div>
+
+    <!-- CTA -->
+    <div class="cta">
+        <h2 style="font-size: 2rem; margin-bottom: 15px;">Pronto para salvar vidas?</h2>
+        <a href="#doacao" class="btn">QUERO DOAR AGORA</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Hemolife - Todos os direitos reservados</p>
+    </footer>
+
+</body>
+</html>
